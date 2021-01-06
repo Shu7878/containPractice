@@ -39,7 +39,7 @@ public class ContainPracticeMain {
 		String search = sc.next();
 
 		//文字列の設定
-		System.out.println("個数を検索したい文字列を "+ countNum + " 回入力してください");
+		System.out.println("先ほど入力した文字が含まれているか検索したい文字列を "+ countNum + " 回入力してください");
 		for(int i = 0; i < countNum; i++){
 			column.add(sc.next());
 		}
@@ -48,6 +48,7 @@ public class ContainPracticeMain {
 		for(int i = 0; i < column.size(); i++){
 			countColumn.add(0);
 		}
+
 		//出てきた回数を記録
 		for(int i = 0; i < column.size(); i++){
 			while(true){
@@ -59,6 +60,7 @@ public class ContainPracticeMain {
 			}
 		}
 
+		//含まれている個数の出力
 		for(int i = 0; i < column.size(); i++){
 			System.out.println(countColumn.get(i));
 		}
